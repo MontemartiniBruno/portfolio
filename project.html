@@ -141,7 +141,7 @@
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="submit" value="Send Message" class="primary" onclick="alert()" /></li>
 										
 									</ul>
 									<input type="hidden" name="_next" value="https://montemartinibruno.me">
@@ -192,6 +192,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				function alert(){
+					Swal.fire(
+  						'Thanks!',
+  						'email send succesfuly',
+  						'success'
+)
+				}
+			</script>
 	</body>
 </html>
